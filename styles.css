@@ -1,0 +1,104 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('shopping4.png') center/cover no-repeat fixed;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    color: #fff; /* Set a neutral light color for better readability */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #fff; /* Set the heading color to a light color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adjust the text shadow for better visibility */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+    filter: brightness(1.2); /* Brighten the button color on hover */
+}
+
+#loginBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4c0445; /* Set a color that complements pink for the "Login with Google" button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#loginBtn:hover {
+    background-color: #7a155c; /* Adjust the hover color */
+}
+
+#searchInput, #sizeFilter {
+    margin-bottom: 20px;
+    color: #0c0b0b83; /* Set a neutral light color for better readability in input fields */
+}
+
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#productContainer img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#productContainer img:hover {
+    transform: scale(1.1);
+}
+
+#blogContent {
+    color: #fff; /* Set a neutral light color for better readability in blog content */
+}
+
+#toSearchBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4c0445; /* Set a color that complements pink for the "Go to Search" button */
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#toSearchBtn:hover {
+    background-color: #7a155c; /* Adjust the hover color */
+}
+
+#toBlogBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:#4c0445; /* Set a color that complements pink for the "Go to Blog" button */
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#toBlogBtn:hover {
+    background-color: #7a155c; /* Adjust the hover color */
+}
